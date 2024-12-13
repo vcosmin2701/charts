@@ -1,14 +1,13 @@
 import SwiftUI
+import Charts
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        BarChart()
+            .frame(maxWidth: 300, maxHeight: 350)
+        
+        StackedBarChart()
+            .frame(maxWidth: 300, maxHeight: 350)
     }
 }
 
