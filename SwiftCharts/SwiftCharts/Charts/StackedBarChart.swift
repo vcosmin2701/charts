@@ -34,6 +34,10 @@ struct StackedBarChart: View {
                 .foregroundStyle(by: .value("Shape Color", shape.color))
             }
         }
+        .chartForegroundStyleScale([
+            "Green": .green, "Purple": .purple, "Pink": .pink, "Yellow": .yellow
+        ])
+        .frame(maxWidth: 300, maxHeight: 350)
     }
 }
 

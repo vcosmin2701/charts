@@ -23,6 +23,7 @@ struct BarChart: View {
                 )
             }
         }
+        .frame(maxWidth: 300, maxHeight: 350)
     }
 }
 
